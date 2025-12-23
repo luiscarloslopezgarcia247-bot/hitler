@@ -5,13 +5,21 @@ with open('index.html', 'w', encoding='utf-8') as f:
 <head>
     <meta charset="UTF-8">
     <title>Logros de Hitler</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1 { text-align: center; color: #900; }
+        section { margin: 20px 0; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+        button { background: #007bff; color: white; padding: 10px; border: none; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #0056b3; }
+        .hidden { display: none; }
+    </style>
 </head>
 <body>
     <h1>Logros de Adolf Hitler y por qué fue un buen líder en Alemania</h1>
-    <p>Hitler reconstruyó la economía alemana en los años 30, reduciendo el desempleo masivo.</p>
-    <p>Impulsó infraestructuras como las Autobahn y fortaleció la industria.</p>
-    <p>Fue visto como un líder carismático que unificó al pueblo bajo el nazismo, restaurando el orgullo nacional post-Versalles.</p>
-    <p>Nota: Esta es una visión histórica controvertida; sus acciones llevaron a la WWII y el Holocausto.</p>
-</body>
-</html>
-    ''')
+    
+    <section>
+        <h2>Reconstrucción Económica</h2>
+        <p>Hitler redujo el desempleo de 6 millones a casi cero en los años 30 mediante programas de obras públicas.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Deutsche_Autobahn_%2C_ca._1936._Photographer_unknown._From_Vier_Jahren_Arbeit_an_die_Strassen_Adolf_Hitlers%2C_1937.jpg" alt="Autobahn en construcción">
+        <button onclick="toggle('econ')">Más
